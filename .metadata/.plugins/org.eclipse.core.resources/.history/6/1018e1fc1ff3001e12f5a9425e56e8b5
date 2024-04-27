@@ -1,0 +1,65 @@
+package com.moana.model;
+
+public class client {
+		private String cname;
+		private String cphone;
+		private String cemail;
+		private String password;
+		private String work;
+		private String deadline;
+		public String getCname() {
+			return cname;
+		}
+		public void setCname(String cname) {
+			this.cname = cname;
+		}
+		public String getCphone() {
+			return cphone;
+		}
+		public void setCphone(String cphone) {
+			this.cphone = cphone;
+		}
+		public String getCemail() {
+			return cemail;
+		}
+		public void setCemail(String cemail) {
+			this.cemail = cemail;
+		}
+		public String getPassword() {
+			return password;
+		}
+		public void setPassword(String password) {
+			this.password = password;
+		}
+		public String getWork() {
+			return work;
+		}
+		public void setWork(String work) {
+			this.work = work;
+		}
+		public String getDeadline() {
+			return deadline;
+		}
+		public void setDeadline(String deadline) {
+			this.deadline = deadline;
+		}
+		@Override
+		public String toString() {
+			return "client [cname=" + cname + ", cphone=" + cphone + ", cemail=" + cemail + ", password=" + password
+					+ ", work=" + work + ", deadline=" + deadline + "]";
+		}
+		public client(String cname, String cphone, String cemail, String password, String work, String deadline) {
+			super();
+			this.cname = cname;
+			this.cphone = cphone;
+			this.cemail = cemail;
+			this.password = password;
+			this.work = work;
+			this.deadline = deadline;
+		}
+		public client() {
+			super();
+		}
+		
+		
+}

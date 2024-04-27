@@ -1,0 +1,18 @@
+package com.sharko.Mevwark;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	
+        BeanFactory factory = new BeanFactory(new FileSystemResource("Spring.xml"));
+        Alien obj = (Alien)factory.getBean(Alien.class);
+    }
+}

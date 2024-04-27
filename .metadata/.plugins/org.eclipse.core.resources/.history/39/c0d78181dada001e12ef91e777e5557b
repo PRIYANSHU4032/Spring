@@ -1,0 +1,20 @@
+package com.sharko.Mevwark;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.FileSystemResource;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	
+    	ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext("Spring.xml");
+       Alien myBean= (Alien) context.getBean("Spring3HelloWorldBean");
+        myBean.code();
+    }
+}

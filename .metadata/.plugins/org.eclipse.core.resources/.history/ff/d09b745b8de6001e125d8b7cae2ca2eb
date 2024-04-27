@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<form action="addAdmin">
+		Enter your name:<input type="text" name="name"><br>
+		Enter Your user name:<input type="text" name="userid"><br>
+		Enter Your password:<input type="text" name="password"><br>
+		Enter your email:<input type="text" name="email"><br>
+		<input type="submit">
+		
+		
+		</form>
+		<form action="getAdmin">
+		Enter Your user name:<input type="text" name="userid"><br>
+		<input type="submit">
+		</form>
+</body>
+</html>

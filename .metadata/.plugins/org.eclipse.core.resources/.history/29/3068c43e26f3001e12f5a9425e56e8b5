@@ -1,0 +1,19 @@
+package com.moana;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.moana.model.client;
+
+@Controller
+public class ClientControlller {
+	private ClientService cs;
+	@RequestMapping("createClient")
+	public String createClient(client c,Model m) {
+		cs.save(c);
+		 
+		return "updatesuccpage";
+	}
+
+}

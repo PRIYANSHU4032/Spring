@@ -1,0 +1,9 @@
+package com.moana;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class ClientControlller {
+	private ClientService cs;
+
+}
